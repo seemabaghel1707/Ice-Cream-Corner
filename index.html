@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Corner</title>
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            background-color: rgb(185, 62, 83);
+            padding: 10px 5px 10px 5px;
+            border-radius: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: 76453B;
+            margin-left: auto;
+
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+        }
+
+        li>a:hover {
+            background-color: aquamarine;
+        }
+
+        #search {
+            padding: 12px 20px 12px 10px;
+            border-radius: 25px;
+            height: 10px;
+            margin-left: 20px;
+        }
+
+        #searchBtn {
+            height: 30px;
+            width: 100px;
+            margin-left: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 1px black;
+        }
+
+        #banner {
+            background-image: url('Ice banner.jpg');
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #banner-text > h1 {
+            font-size: 80px;
+            font-family: cursive;
+            font-weight: 500px;
+            color: rgb(12, 12, 12);
+            text-align: center;
+            justify-content: center;
+          
+        }
+
+        #banner-text > p {
+            text-align: center;
+            font-size: 50px;
+            font-family: cursive;
+            font-weight: 400;
+        }
+
+        #section-heading {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        #section-heading>h2 {
+            font-family: cursive;
+            font-size: 40px;
+        }
+
+        #catalogue {
+
+            border-radius: 5px;
+            padding: 20px;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            display: flex;
+            flex-wrap: wrap;
+           
+             
+
+        }
+
+        .catalogue-card {
+            border-radius: 10px;
+            border: 5px solid rgb(55, 95, 204);
+            width: 25%;
+            padding: 5px;
+            box-shadow: 10px 8px gray;
+            margin-bottom: 40px;
+
+
+        }
+
+        .card-image {
+            display: flex;
+            justify-content: center;
+        }
+
+        .catalogue-card>img {
+            height: 40px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 5px;
+            text-align: center;
+        }
+
+        .card-body>u>h3 { 
+            font-family: cursive;
+            font-weight: 400;
+            font-size: 30px;
+            margin-bottom: 3px;
+        }
+
+        .card-body>p {
+            font-family: cursive;
+            font-weight: 300px;
+        }
+
+        .orderBtn {
+            background-color: rgb(212, 109, 109);
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
+            box-shadow: 3px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" height="50px" width="50px" style="border-radius: 99px ;">
+            <input type="text" id="search">
+            <button type="button" id="searchBtn" placeholder="Search keywords">Search</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                 <li><a href="About Us.html">About Us</a></li>
+                <li><a href="Contact Us.html"> Contact Us</a></li>
+            </ul>
+        </header>
+        <main>
+            <div id="banner">
+                <div id="banner-text">
+                    <h1>Ice Cream Corner</h1>
+                
+                <p>Tasty and Delicious. Enjoy Every Bite.</p>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div id="section-heading">
+            <h2>Trending Flavours >>>>></h2>
+        </div>
+        <div id="catalogue">
+            <div class="catalogue-card">
+                <div class="card-image">
+                    <img height="220px" src="iceCream1.jfif">
+                </div>
+                <div class="card-body">
+                    <u>
+                        <h3>Mixed Flavour</h3>
+                    </u>
+                    <p>Enjoy the taste for multiple Flavours in a single ice cream <br>
+                        Contains Strawberry, Mango, Vanilla, etc. all in one.
+                    </p>
+                    <button class="orderBtn">Place Order >>> </button>
+                </div>
+            </div>
+            <div class="catalogue-card">
+                <div class="card-image">
+                    <img height="220px" src="iceCream2.jfif">
+                </div>
+                <div class="card-body">
+                    <u>
+                        <h3>Chocolate Flavour</h3>
+                    </u>
+                    <p>Enjoy the taste for multiple Flavours in a single ice cream <br>
+                        Contains Strawberry, Mango, Vanilla, etc. all in one.
+                    </p>
+                    <button class="orderBtn">Place Order >>> </button>
+                </div>
+            </div>
+            <div class="catalogue-card">
+                <div class="card-image">
+                    <img height="220px" src="iceCream3.jfif">
+                </div>
+                <div class="card-body">
+                    <u>
+                        <h3>Strawberry Flavour</h3>
+                    </u>
+                    <p>Enjoy the taste for multiple Flavours in a single ice cream <br>
+                        Contains Strawberry, Mango, Vanilla, etc. all in one.
+                    </p>
+                    <button class="orderBtn">Place Order >>> </button>
+                </div>
+            </div>
+          
+            <div class="catalogue-card">
+                <div class="card-image">
+                    <img height="220px" src="iceCream4.jfif">
+                </div>
+                <div class="card-body">
+                    <u>
+                        <h3>Vanilla Flavour</h3>
+                    </u>
+                    <p>Enjoy the taste for multiple Flavours in a single ice cream <br>
+                        Contains Strawberry, Mango, Vanilla, etc. all in one.
+                    </p>
+                    <button class="orderBtn">Place Order >>> </button>
+                </div>
+            </div>
+            <div class="catalogue-card">
+                <div class="card-image">
+                    <img height="220px" src="iceCream5.jfif">
+                </div>
+                <div class="card-body">
+                    <u>
+                        <h3>ButterScoch Flavour</h3>
+                    </u>
+                    <p>Enjoy the taste for multiple Flavours in a single ice cream <br>
+                        Contains Strawberry, Mango, Vanilla, etc. all in one.
+                    </p>
+                    <button class="orderBtn"> Place Order >>></button>
+                </div>
+            </div>
+            <div class="catalogue-card">
+                <div class="card-image">
+                    <img height="220px"src="iceCream6.jfif">
+                </div>
+                <div class="card-body">
+                    <u>
+                        <h3>Chocobar Flavour</h3>
+                    </u>
+                    <p>Enjoy the taste for multiple Flavours in a single ice cream <br>
+                        Contains Strawberry, Mango, Vanilla, etc. all in one.
+                    </p>
+                    <button class="orderBtn">Place Order >>> </button>
+                </div>
+            </div>
+            <div class="catalogue-card">
+                <div class="card-image">
+                    <img height="220px" src="iceCream7.jpg">
+                </div>
+                <div class="card-body">
+                    <u>
+                        <h3>Coffee Flavour</h3>
+                    </u>
+                    <p>Enjoy the taste for multiple Flavours in a single ice cream <br>
+                        Contains Strawberry, Mango, Vanilla, etc. all in one.
+                    </p>
+                    <button class="orderBtn">Place Order >>> </button>
+                </div>
+            </div>
+          
+            <div class="catalogue-card">
+                <div class="card-image">
+                    <img height="220px" src="iceCream8.jpg">
+                </div>
+                <div class="card-body">
+                    <u>
+                        <h3>Cotton Candy Flavour</h3>
+                    </u>
+                    <p>Enjoy the taste for multiple Flavours in a single ice cream <br>
+                        Contains Strawberry, Mango, Vanilla, etc. all in one.
+                    </p>
+                    <button class="orderBtn">Place Order >>> </button>
+                </div>
+            </div>
+            <div class="catalogue-card">
+                <div class="card-image">
+                    <img height="220px" src="iceCream9.jpg">
+                </div>
+                <div class="card-body">
+                    <u>
+                        <h3>French Vanilla Flavour</h3>
+                    </u>
+                    <p>Enjoy the taste for multiple Flavours in a single ice cream <br>
+                        Contains Strawberry, Mango, Vanilla, etc. all in one.
+                    </p>
+                    <button class="orderBtn"> Place Order >>></button>
+                </div>
+            </div>
+            <div class="catalogue-card">
+                <div class="card-image">
+                    <img height="220px"src="iceCream10.jpg">
+                </div>
+                <div class="card-body">
+                    <u>
+                        <h3>Cake Batter Flavour</h3>
+                    </u>
+                    <p>Enjoy the taste for multiple Flavours in a single ice cream <br>
+                        Contains Strawberry, Mango, Vanilla, etc. all in one.
+                    </p>
+                    <button class="orderBtn">Place Order >>> </button>
+                </div>
+            </div>
+            <div class="catalogue-card">
+                <div class="card-image">
+                    <img height="220px"src="iceCream11.jpg">
+                </div>
+                <div class="card-body">
+                    <u>
+                        <h3>Pistachio Flavour</h3>
+                    </u>
+                    <p>Enjoy the taste for multiple Flavours in a single ice cream <br>
+                        Contains Strawberry, Mango, Vanilla, etc. all in one.
+                    </p>
+                    <button class="orderBtn">Place Order >>> </button>
+                </div>
+            </div>
+            <div class="catalogue-card">
+                <div class="card-image">
+                    <img height="220px"src="iceCream12.jpg">
+                </div>
+                <div class="card-body">
+                    <u>
+                        <h3>Butter Pecan Flavour</h3>
+                    </u>
+                    <p>Enjoy the taste for multiple Flavours in a single ice cream <br>
+                        Contains Strawberry, Mango, Vanilla, etc. all in one.
+                    </p>
+                    <button class="orderBtn">Place Order >>> </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    </div>
+</body>
+
+</html
